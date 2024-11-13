@@ -89,14 +89,24 @@
       width: 4px;
 
       animation-name: blink; /*Nombre de la animación*/
+      animation-duration: 2s; /*Duración de la animación*/
+      animation-iteration-count: infinite; /*Número de veces que se repite la animación*/
     }
 
     @keyframes blink { /*Definición de la animación*/
-      0% {}
+      0% {
+        height: 4px;
+      }
 
-      5% {}
+      5% {
+        transform: translate(0px, 2px);
+        height: 1px;
+      }
 
-      10% {}
+      10% {
+        transform: translate(0px, 0px);
+        height: 4px;
+      }
     }
 
     .head__eye--left {
