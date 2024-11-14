@@ -116,6 +116,11 @@
       animation-name: blink; /*Nombre de la animación*/
       animation-duration: 2s; /*Duración de la animación*/
       animation-iteration-count: infinite; /*Número de veces que se repite la animación*/
+
+      animation-play-state: running; /*Estado de la animación*/
+      animation-play-state: paused; /*Estado de la animación*/
+      animation-direction: alternate; /*Dirección de la animación*/
+
     }
 
     @keyframes blink { /*Definición de la animación*/
@@ -444,6 +449,10 @@
       right: 0px;
       position: absolute;
       width: 80px;
+    }
+
+    @keyframes miAnimacion {
+
     }
   </style>
 </head>
